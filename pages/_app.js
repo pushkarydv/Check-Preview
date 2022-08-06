@@ -4,7 +4,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className="custom-font w-full min-h-screen overflow-x-hidden bg-slate-100 text-slate-700">
+    <main className="transition-all bg-slate-100 min-h-screen  text-slate-800 dark:bg-slate-900 dark:text-slate-50 custom-font">
       <Component {...pageProps} />
     </main>
   );

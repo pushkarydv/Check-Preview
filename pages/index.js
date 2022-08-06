@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Footer from "../components/globals/Footer";
+import Header from "../components/globals/Header";
 
 export default function Home() {
   return (
@@ -8,11 +10,8 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <h1 className="text-center text-emerald-600 text-4xl font-bold">
-          Hello India!
-        </h1>
-      </div>
+      <Header />
+      <Footer />
     </>
   );
 }
