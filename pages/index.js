@@ -1,9 +1,11 @@
-import { ArrowRightIcon, SearchIcon } from "@heroicons/react/outline";
+import { SearchIcon } from "@heroicons/react/outline";
 import axios from "axios";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Footer from "../components/globals/Footer";
 import Header from "../components/globals/Header";
+import CardPreview from "../components/Home/CardPreview";
+import Hero from "../components/Home/Hero";
 export default function Home() {
   const [website, setWebsite] = useState("");
   const [data, setData] = useState(null);
@@ -26,11 +28,7 @@ export default function Home() {
       <Header />
       <div className="flex flex-col md:flex-row p-4 my-4">
         <div className="w-full md:w-[60%] py-4">
-          {!data && (
-            <div className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold text-emerald-600 dark:text-emerald-400 text-center md:text-left">
-              Check URL card
-            </div>
-          )}
+          {!data && <Hero />}
 
           <form
             onSubmit={handleWebDataRequest}
@@ -54,31 +52,15 @@ export default function Home() {
               <SearchIcon className="w-full stroke-slate-600 dark:stroke-slate-300 stroke-[1]" />
             </button>
           </form>
-          {data && (
-            <div class="max-w-sm lg:max-w-md xl:max-w-lg my-4 mx-auto md:mx-0 rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full"
-                src={data.image}
-                alt="Sunset in the mountains"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">{data.title}</div>
-                <p class="text-gray-700 text-base">{data.description}</p>
-              </div>
-
-              <a
-                href={data.url}
-                className="transition-all my-4 mx-2 p-2 text-lg block text-center bg-emerald-400 rounded-full text-slate-50 group hover:bg-emerald-500"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Visit {data.title}{" "}
-                <ArrowRightIcon className="transition-all h-7 stroke-[1.2] inline-block group-hover:relative group-hover:-right-2" />
-              </a>
-            </div>
-          )}
+          {data && <CardPreview data={data} />}
         </div>
-        <div className="w-full md:w-[40%]"></div>
+        <div className="w-full md:w-[40%]">
+          <img
+            src="/search.png"
+            className="w-[90%] my-2 mx-auto md:w-full p-4"
+            alt=""
+          />
+        </div>
       </div>
       <Footer />
     </>
