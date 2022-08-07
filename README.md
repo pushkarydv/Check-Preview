@@ -1,9 +1,9 @@
 <h1 align="center">
  <img src="https://checkpreview.vercel.app/logo.png" width="32px"/> <br/>Check Preview<br/>
- <img src="https://img.shields.io/github/package-json/v/pushkarydv/Check-Preview?color=g&label=CheckPreview">
- <img src="https://img.shields.io/npm/v/npm">
- <img src="https://img.shields.io/website?url=https%3A%2F%2Fcheckpreview.vercel.app/)">
- <img src="https://img.shields.io/github/languages/code-size/pushkarydv/Check-Preview?logo=github">
+ <img src="https://img.shields.io/github/package-json/v/pushkarydv/Check-Preview?color=g&label=CheckPreview&style=flat-squar">
+ <img src="https://img.shields.io/npm/v/npm?style=flat-squar">
+ <img src="https://img.shields.io/website?url=https%3A%2F%2Fcheckpreview.vercel.app&style=flat-squar">
+ <img src="https://img.shields.io/github/languages/code-size/pushkarydv/Check-Preview?logo=github&style=flat-square">
 </h1>
 
 ## Inspiration
