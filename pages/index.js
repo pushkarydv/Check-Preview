@@ -5,12 +5,15 @@ import { useEffect, useState } from "react";
 import Footer from "../components/globals/Footer";
 import Header from "../components/globals/Header";
 export default function Home() {
-  const [website, setWebsite] = useState(null);
+  const [website, setWebsite] = useState("");
   const [data, setData] = useState(null);
   function handleWebDataRequest(e) {
     e.preventDefault();
     let url = "api/fetchWebsiteData/?website=" + website;
-    axios.get(url).then((response) => setData(response.data.data));
+    axios
+      .get(url)
+      .then((response) => setData(response.data.data))
+      .catch((err) => alert("Sorry Somethuing Went Wrong. Check URL once"));
     console.log(website);
   }
   return (
@@ -66,6 +69,8 @@ export default function Home() {
               <a
                 href={data.url}
                 className="transition-all my-4 mx-2 p-2 text-lg block text-center bg-emerald-400 rounded-full text-slate-50 group hover:bg-emerald-500"
+                target="_blank"
+                rel="noreferrer noopener"
               >
                 Visit {data.title}{" "}
                 <ArrowRightIcon className="transition-all h-7 stroke-[1.2] inline-block group-hover:relative group-hover:-right-2" />
