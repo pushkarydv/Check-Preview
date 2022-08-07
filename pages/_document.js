@@ -4,6 +4,20 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* ` as this app is of just one route so adding GTags in _document only` */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-1ECMQ6ND3L"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-1ECMQ6ND3L');`,
+          }}
+        />
+        <meta charSet="UTF-8" />
         <meta name="title" content="Card Preview" />{" "}
         <meta
           name="description"
