@@ -26,8 +26,8 @@ export default function Header() {
     <div className="flex flex-row text-3xl font-bold items-center justify-between p-2 md:p-4 lg:p-6">
       <Link href={"/"} className="no-underline flex flex-row items-center">
         <a className="no-underline flex flex-row items-center">
-          {/* <img src="/logo.png" className="h-10 mr-2" alt="" /> */}Check
-          Preview
+          <img src="/logo.png" className="h-10 mr-2" alt="" />
+          Check Preview
         </a>
       </Link>{" "}
       <button onClick={changeTheme} className="transition active:scale-90">

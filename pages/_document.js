@@ -17,6 +17,11 @@ export default function Document() {
           gtag('js', new Date()); gtag('config', 'G-1ECMQ6ND3L');`,
           }}
         />
+        {/* make http based api call from https */}
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        ></meta>
         <meta charSet="UTF-8" />
         <meta name="title" content="Card Preview" />{" "}
         <meta
