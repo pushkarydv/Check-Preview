@@ -6,6 +6,8 @@
  <img src="https://img.shields.io/github/languages/code-size/pushkarydv/Check-Preview?logo=github&style=flat-square">
 </h1>
 
+Built as a hackathon project😉 
+
 ## Inspiration
 As of now each website should have meta data so that whenever it's link is Shared User get to know what's it is about without even opening the link
 
