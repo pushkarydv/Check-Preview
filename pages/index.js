@@ -28,7 +28,7 @@ export default function Home() {
 
           <form
             onSubmit={handleWebDataRequest}
-            className="transition-all w-full mx-auto sm:w-[60%] md:mx-0  text-xl relative my-8"
+            className="transition-all w-[90%] mx-auto sm:w-[60%] md:mx-0  text-xl relative my-8"
           >
             <input
               type="url"
@@ -50,13 +50,25 @@ export default function Home() {
           </form>
           {data && <CardPreview data={data} />}
         </div>
-        <div className="w-full md:w-[40%]">
+        <div className="w-full my-12 md:my-0 md:w-[40%]">
           <img
             src="/search.png"
             className="w-[90%] my-2 mx-auto md:w-full p-4"
             alt=""
           />
         </div>
+      </div>
+      <div className="text-center px-4 pb-4">
+        No problem If your website doesn&apos;t Show Cards, Get necessary meta
+        tags Here{" "}
+        <a
+          href="https://websearcher.pushkaryadav.in"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="underline text-emerald-500 font-medium dark:text-emerald-200"
+        >
+          Web Searcher
+        </a>
       </div>
       <Footer />
     </>
