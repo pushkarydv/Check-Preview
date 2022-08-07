@@ -11,10 +11,11 @@ export default function Home() {
   const [data, setData] = useState(null);
   function handleWebDataRequest(e) {
     e.preventDefault();
-    let url = "api/fetchWebsiteData/?website=" + website;
+    setData(null);
+    let url = `http://api.linkpreview.net/?key=${process.env.NEXT_PUBLIC_LINK_API_KEY}&q=${website}`;
     axios
       .get(url)
-      .then((response) => setData(response.data.data))
+      .then((response) => setData(response.data))
       .catch((err) => alert("Sorry Somethuing Went Wrong. Check URL once"));
     console.log(website);
   }
@@ -23,7 +24,7 @@ export default function Home() {
       <Head>
         <title>Check Preview</title>
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <Header />
       <div className="flex flex-col md:flex-row p-4 my-4">
