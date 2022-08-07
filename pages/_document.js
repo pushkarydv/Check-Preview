@@ -23,7 +23,7 @@ export default function Document() {
           content="upgrade-insecure-requests"
         ></meta>
         <meta charSet="UTF-8" />
-        <meta name="title" content="Card Preview" />{" "}
+        <meta name="title" content="Check Preview" />{" "}
         <meta
           name="description"
           content="A Small website to check how Cards of your website looks when it get's shared via email or any social media"
@@ -37,7 +37,7 @@ export default function Document() {
         <meta name="author" content="Pushkar Yadav" />{" "}
         <meta property="og:type" content="website" />{" "}
         <meta property="og:url" content="https://checkpreview.vercel.app" />{" "}
-        <meta property="og:title" content="Card Preview" />{" "}
+        <meta property="og:title" content="Check Preview" />{" "}
         <meta
           property="og:description"
           content="A Small website to check how Cards of your website looks when it get's shared via email or any social media"
@@ -51,7 +51,7 @@ export default function Document() {
           property="twitter:url"
           content="https://checkpreview.vercel.app"
         />{" "}
-        <meta property="twitter:title" content="Card Preview" />{" "}
+        <meta property="twitter:title" content="Check Preview" />{" "}
         <meta
           property="twitter:description"
           content="A Small website to check how Cards of your website looks when it get's shared via email or any social media"
