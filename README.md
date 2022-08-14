@@ -1,21 +1,25 @@
 <h1 align="center">
  <img src="https://checkpreview.vercel.app/logo.png" width="32px"/> <br/>Check Preview<br/>
- <img src="https://img.shields.io/github/package-json/v/pushkarydv/Check-Preview?color=g&label=CheckPreview&style=flat-squar">
- <img src="https://img.shields.io/npm/v/npm?style=flat-squar">
- <img src="https://img.shields.io/website?url=https%3A%2F%2Fcheckpreview.vercel.app&style=flat-squar">
+ <img src="https://img.shields.io/github/package-json/v/pushkarydv/Check-Preview?color=g&label=CheckPreview&style=flat-square">
+ <img src="https://img.shields.io/npm/v/npm?style=flat-square">
+ <img src="https://img.shields.io/website?url=https%3A%2F%2Fcheckpreview.vercel.app&style=flat-square">
  <img src="https://img.shields.io/github/languages/code-size/pushkarydv/Check-Preview?logo=github&style=flat-square">
 </h1>
 
-Built as a hackathon project😉 
+Built as a hackathon project😉
 
 ## Inspiration
+
 As of now each website should have meta data so that whenever it's link is Shared User get to know what's it is about without even opening the link
 
 ## ❓ What it does
+
 Provide you preview of your website card how it looks and we provide you a tool too which you can use to generate those necessary meta tags https://websearcher.pushkaryadav.in/
 
 ## 🔨 How we built it
-#### We have used:  
+
+#### We have used:
+
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -24,17 +28,18 @@ Provide you preview of your website card how it looks and we provide you a tool 
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-- For data, We have used [Link Preview Api](https://www.linkpreview.net/)  
+- For data, We have used [Link Preview Api](https://www.linkpreview.net/)
 
 ## Libraries used:
+
 - [axios](https://www.npmjs.com/package/axios)
 - [@heroicons/react](https://heroicons.com/)
 - [TailwindCSS](https://tailwindcss.com/)
 
 ## Screenshots
+
 ![image](https://user-images.githubusercontent.com/96358784/183280538-cdac8f65-125e-4557-9db1-99e53d695299.png)
 ![image](https://user-images.githubusercontent.com/96358784/183280558-5912e359-8fd8-4f15-bf35-539bc44de7c5.png)
-
 
 <details> <summary>NextJS Guide </summary>
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
